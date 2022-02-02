@@ -1,0 +1,147 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+body{
+	/*font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 400;*/
+	
+	font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+*{
+	box-sizing: border-box;
+    border-radius: 15px; 
+}
+
+fieldset{
+	border: 3px solid;
+}
+
+legend{
+            border: none;
+            padding: auto;
+            text-align: center;
+}
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #ccc;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+/*h1{
+	color:#1C1C1C;
+}*/
+
+.Botao1{
+	text-decoration: none;
+	background-color: #000000;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 700;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.Botao2{
+	text-decoration: none;
+	background-color: #ff0000;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 700;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+.caixa1 {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+#caixa2 {
+			border-radius: 5px;
+            background-color: #c0c0c0;
+            padding: 20px;           
+}
+
+.colunas {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+.colunas2 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+#tabela {
+			margin-top: 30px;
+		}
+
+#tabela th {
+			border: 1px solid #ffffff;
+			border-radius: 5px;
+			padding: 10px;
+			text-align: left;
+			background-color: #000000;
+			color: #fff;
+		}
+        
+#tabela td {
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			padding: 10px;
+ 		}
+ 		
+/* Clear floats after the columns */
+.row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+            .colunas,
+            .colunas2,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
